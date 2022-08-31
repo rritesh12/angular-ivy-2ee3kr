@@ -1,0 +1,8 @@
+<label>name</label>
+
+<input
+  type="text"
+  [ngModel]="name | format: 4-4"
+  (ngModelChange)="name = $event"
+  appTestEvent
+/>
